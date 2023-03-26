@@ -40,7 +40,6 @@ import dummy.model.Product;
 import dummy.model.Shop;
 import dummy.model.User;
 
-@EnableWebMvc
 @Configuration
 public class GsonConfig implements WebMvcConfigurer{
 	
