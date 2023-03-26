@@ -122,7 +122,7 @@ public class MyController {
 		System.out.println("order ser : \n"+input); 
 		Order order = gson.fromJson(input, Order.class);
 		System.out.println("order deser : \n"+order);
-		return gson.fromJson(input, Order.class);
+		return order;
 	}
 	
 	@PostMapping(value = "/createnestedinstancecreators",consumes = MediaType.APPLICATION_JSON_VALUE,
