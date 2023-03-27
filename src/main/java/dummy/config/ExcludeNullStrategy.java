@@ -7,7 +7,7 @@ import com.google.gson.FieldAttributes;
 
 public class ExcludeNullStrategy implements ExclusionStrategy {
 	
-	String fieldname;
+	Object fieldname;
 	Boolean shouldskip=false;
 
 	@Override
