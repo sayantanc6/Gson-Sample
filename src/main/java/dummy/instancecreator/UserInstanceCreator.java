@@ -8,7 +8,9 @@ import org.springframework.stereotype.Component;
 import com.google.gson.InstanceCreator;
 
 import dummy.model.User;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 
+@ConditionalOnBean(OrderInstanceCreator.class)
 @Component
 public class UserInstanceCreator implements InstanceCreator<User> {
 
