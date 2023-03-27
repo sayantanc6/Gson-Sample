@@ -3,7 +3,7 @@ package dummy.model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
-
+import dummy.customserde.ProductListSerDe;
 import org.springframework.stereotype.Component;
 
 import com.google.gson.annotations.JsonAdapter;
@@ -38,7 +38,7 @@ public class Order {
 	@SerializedName("orderingUser")
     private User orderingUser;
 	
-	@JsonAdapter(ProductListSer.class)
+	@JsonAdapter(ProductListSerDe.class)
 	@SerializedName("orderedProducts")
     private List<Product> orderedProducts;
 	
