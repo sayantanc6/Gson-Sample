@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 import com.google.gson.InstanceCreator;
 
 import dummy.model.Product;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 
+@ConditionalOnBean(OrderInstanceCreator.class)
 @Component
 public class OrderProductsInstanceCreator implements InstanceCreator<List<Product>> {
 	
