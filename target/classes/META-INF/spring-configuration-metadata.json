@@ -1,0 +1,81 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "delivered.numOfPackages",
+      "type": "java.lang.String",
+      "description": "A description for 'delivered.numOfPackages'"
+    },
+    {
+      "name": "discount.value",
+      "type": "java.lang.String",
+      "description": "A description for 'discount.value'"
+    },
+    {
+      "name": "instancecreatorbeanexists",
+      "type": "java.lang.String",
+      "description": "A description for 'instancecreatorbeanexists'"
+    },
+    {
+      "name": "instancecreatorbeansexist",
+      "type": "java.lang.String",
+      "description": "A description for 'instancecreatorbeansexist'"
+    },
+    {
+      "name": "instancecreatorbeansexists",
+      "type": "java.lang.String",
+      "description": "A description for 'instancecreatorbeansexists'"
+    },
+    {
+      "name": "orderid",
+      "type": "java.lang.String",
+      "description": "A description for 'orderid'"
+    },
+    {
+      "name": "orderinstancecreatorbeanexists",
+      "type": "java.lang.String",
+      "description": "A description for 'orderinstancecreatorbeanexists'"
+    },
+    {
+      "name": "orderstatus",
+      "type": "java.lang.String",
+      "description": "A description for 'orderstatus'"
+    },
+    {
+      "name": "paymenttype",
+      "type": "java.lang.String",
+      "description": "A description for 'paymenttype'"
+    },
+    {
+      "name": "product.name",
+      "type": "java.lang.String",
+      "description": "A description for 'product.name'"
+    },
+    {
+      "name": "product.price",
+      "type": "java.lang.String",
+      "description": "A description for 'product.price'"
+    },
+    {
+      "name": "shop.name",
+      "type": "java.lang.String",
+      "description": "A description for 'shop.name'"
+    },
+    {
+      "name": "shop.sellername",
+      "type": "java.lang.String",
+      "description": "A description for 'shop.sellername'"
+    },
+    {
+      "name": "user.firstname",
+      "type": "java.lang.String",
+      "description": "A description for 'user.firstname'"
+    },
+    {
+      "name": "user.lastname",
+      "type": "java.lang.String",
+      "description": "A description for 'user.lastname'"
+    }
+  ],
+  "hints": []
+}
