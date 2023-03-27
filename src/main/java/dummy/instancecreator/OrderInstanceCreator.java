@@ -20,7 +20,10 @@ import dummy.model.PaymentType;
 import dummy.model.Product;
 import dummy.model.Shop;
 import dummy.model.User;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
+
+@ConditionalOnProperty(name = "instancecreatorbeansexist",havingValue = "yes")
 @Component
 public class OrderInstanceCreator implements InstanceCreator<Order> {
 	
