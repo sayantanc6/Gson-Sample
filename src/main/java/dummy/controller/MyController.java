@@ -19,6 +19,9 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -48,27 +51,32 @@ public class MyController {
 	private Gson gson;
 	
 	Set<ArtistModel> artistset;
-        List<Animal> animals;
+    List<Animal> animals;
 	Map<Long, ArtistModel> artistmap;
 	StringBuilder builder;
-
-    @Autowired
-    ArtistModelListInstanceCreator cArtistModelListInstanceCreator;
+	
+	@Value("${instancecreatorbeansexist}")
+	String instcreatorsexist;
     
     @Autowired
-    OrderInstanceCreator ordercreator;
+    AbstractApplicationContext ctx;
 
     // Here JsonAdapter won't work,because we're not deserializing SampleController.java!
     //@JsonAdapter(ArtistModelListDeser.class)
     List<ArtistModel> artists;
     Order order;
+    
+    GenericBox<ArtistModel> artistmodelbox;
 
 	
 	@PostMapping(value = "/simpleobjectusernestedserde",consumes = MediaType.APPLICATION_JSON_VALUE,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public UserNested simpleobjectusernestedserde(@RequestBody UserNested obj) {
 		/* 
-		 * sample JSON request body
+		 * sample JSON request body without instance creator,
+		 * but with instance creator it's not needed as you've a 
+		 * customised parameterised constructors in-built.
+		 * 
 		 * {
 		 *   "name" : "sayantan",
 		 *   "email" : "sayantanc6@gmail.com",
@@ -95,7 +103,10 @@ public class MyController {
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public Order complexobjectorderserde(@RequestBody Order obj) {
 		/*
-		 * Sample JSON request body
+		 * Sample JSON request body without instance creator,
+		 * but with instance creator it's not needed as you've a 
+		 * customised parameterised constructors in-built.
+		 * 
 		 * {
 		 *	    "orderFinishDate" : "2013-03-25T12:06:06",
 		 *      "paymentType" : "CARD",
@@ -120,26 +131,41 @@ public class MyController {
 		System.out.println(obj);
 		String input = gson.toJson(obj, Order.class);
 		System.out.println("order ser : \n"+input); 
-		Order order = gson.fromJson(input, Order.class);
-		System.out.println("order deser : \n"+order);
-		return order;
+		
+	   if (instcreatorsexist.equals("yes")) {
+			OrderInstanceCreator ordercreator = ctx.getBean(OrderInstanceCreator.class);
+			Order order = ordercreator.createInstance(new TypeToken<Order>() {}.getType());
+			System.out.println("order deser : \n" + order);
+			return order;
+	   }
+		return gson.fromJson(input, Order.class);
 	}
 	
+	@ConditionalOnProperty(name = "instancecreatorbeansexist",havingValue = "yes")
 	@PostMapping(value = "/createnestedinstancecreators",consumes = MediaType.APPLICATION_JSON_VALUE,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public void createnestedinstancecreators() {
-		this.order = ordercreator.createInstance(Order.class);
-		System.out.println(this.order);
-		System.out.println("order ser : \n");
-		String orderser = gson.toJson(this.order);
-		System.out.println(orderser);
+		if (instcreatorsexist.equals("yes")) {
+			OrderInstanceCreator ordercreator = ctx.getBean(OrderInstanceCreator.class);
+			this.order = ordercreator.createInstance(Order.class);
+			System.out.println(this.order);
+			System.out.println("order ser : \n");
+			String orderser = gson.toJson(this.order);
+			System.out.println(orderser);
+		}
 	}
 	
 	@GetMapping(value = "gsonserde",consumes = MediaType.APPLICATION_JSON_VALUE,
 			produces = MediaType.APPLICATION_JSON_VALUE,headers = "Accept=application/json")
 	public void gsonserde() {
-		this.artists = cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType());
-
+		if (instcreatorsexist.equals("yes")) {
+			ArtistModelListInstanceCreator cArtistModelListInstanceCreator = ctx.getBean(ArtistModelListInstanceCreator.class);
+			this.artists = cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType());
+		}else {
+			this.artists = Arrays.asList(new ArtistModel(1L, "abc", "34", "catch1", "desc1", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null),
+										 new ArtistModel(2L, "abc1", "44", "catch2", "desc2", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null),
+										 new ArtistModel(3L, "abc2", "54", "catch3", "desc3", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null));
+		}
 		String jsonout  = gson.toJson(this.artists);
 		System.out.println("json ser :-");
 		System.out.println(jsonout);
@@ -154,9 +180,14 @@ public class MyController {
 			produces = MediaType.APPLICATION_JSON_VALUE,headers = "Accept=application/json")
 	public void getgsonmap() {
 		Map<Long, ArtistModel> map = new HashMap<Long, ArtistModel>();
-		
-		this.artists = cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType());
-		
+		if (instcreatorsexist.equals("yes")) {
+			ArtistModelListInstanceCreator cArtistModelListInstanceCreator = ctx.getBean(ArtistModelListInstanceCreator.class);
+			this.artists = cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType()); 
+		}else {
+			this.artists = Arrays.asList(new ArtistModel(1L, "abc", "34", "catch1", "desc1", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null),
+										 new ArtistModel(2L, "abc1", "44", "catch2", "desc2", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null),
+										 new ArtistModel(3L, "abc2", "54", "catch3", "desc3", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null));
+		}
 		map = this.artists.stream().collect(Collectors.toMap(ArtistModel::getArtistId, Function.identity())); 
 		
 		String jsonmap  = gson.toJson(map); 
@@ -174,7 +205,15 @@ public class MyController {
 			produces = MediaType.APPLICATION_JSON_VALUE,headers = "Accept=application/json")
 	public void gsonlistsetmapserde() throws IOException {
 		
-                this.artists = cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType());
+        if (instcreatorsexist.equals("yes")) {
+    		ArtistModelListInstanceCreator cArtistModelListInstanceCreator = ctx.getBean(ArtistModelListInstanceCreator.class);
+			this.artists = cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType());
+        }else {
+        	this.artists = Arrays.asList(new ArtistModel(1L, "abc", "34", "catch1", "desc1", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null),
+										 new ArtistModel(2L, "abc1", "44", "catch2", "desc2", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null),
+										 new ArtistModel(3L, "abc2", "54", "catch3", "desc3", new GregorianCalendar(2023, Calendar.DECEMBER, 7).toZonedDateTime().toLocalDateTime(), null));
+		}
+        
 		System.out.println("artist list : "+this.artists);
 
 		String jsonout  = gson.toJson(this.artists);
@@ -281,11 +320,19 @@ public class MyController {
 
 	@GetMapping(value = "genericsserde",consumes = MediaType.APPLICATION_JSON_VALUE,
 				produces = MediaType.APPLICATION_JSON_VALUE,headers = "Accept=application/json")
-		public void genericsserde() {
+		public void genericsserde() { 
 			
-			GenericBox<ArtistModel> artistmodelbox = new GenericBox<ArtistModel>(new ArtistModel(7L, "gen", "67", "gencatch", "gendesc", new GregorianCalendar(2023, Calendar.OCTOBER, 23).toZonedDateTime().toLocalDateTime(), new Director(this.cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType()))));
+			if (instcreatorsexist.equals("yes")) {
+				ArtistModelListInstanceCreator cArtistModelListInstanceCreator = ctx.getBean(ArtistModelListInstanceCreator.class);
+				this.artistmodelbox = new GenericBox<ArtistModel>(new ArtistModel(7L, "gen", "67", "gencatch", "gendesc",
+						new GregorianCalendar(2023, Calendar.OCTOBER, 23).toZonedDateTime().toLocalDateTime(),
+						new Director(cArtistModelListInstanceCreator.createInstance(new TypeToken<List<ArtistModel>>() {}.getType()))));
+			}else {
+				this.artistmodelbox = new GenericBox<ArtistModel>(new ArtistModel(7L, "gen", "67", "gencatch", "gendesc",
+						new GregorianCalendar(2023, Calendar.OCTOBER, 23).toZonedDateTime().toLocalDateTime(),null));
+			}
 			System.out.println("generics ser : ");
-			String artmodboxstr = gson.toJson(artistmodelbox);
+			String artmodboxstr = gson.toJson(this.artistmodelbox);
 			System.out.println(artmodboxstr);
 			
 			System.out.println("generics deser : ");
