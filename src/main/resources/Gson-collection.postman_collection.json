@@ -1,0 +1,1048 @@
+{
+	"info": {
+		"_postman_id": "adfc1574-5621-4c8c-b871-7ad054ca708d",
+		"name": "Gson-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9387827"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/genericsserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/genericsserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"genericsserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/nestedinnerserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/nestedinnerserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"nestedinnerserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/hierarchicalserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/hierarchicalserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hierarchicalserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonlistsetmapserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonlistsetmapserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonlistsetmapserde"
+					]
+				}
+			},
+                        "response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonsermap",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonsermap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonsermap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/createnestedinstancecreators",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/createnestedinstancecreators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createnestedinstancecreators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/simpleobjectusernestedserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"sayantan\",\r\n    \"email\" : \"sayantanc6@gmail.com\",\r\n    \"isDeveloper\" : true,\r\n    \"age\": 34,\r\n    \"userAddress\" : {\r\n        \"street\" : \"sitala tala\",\r\n        \"houseNumber\" : \"18/A\",\r\n        \"city\": \"Kolkata\",\r\n        \"country\" : \"India\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/simpleobjectusernestedserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"simpleobjectusernestedserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/genericsserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/genericsserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"genericsserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/nestedinnerserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/nestedinnerserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"nestedinnerserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/hierarchicalserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/hierarchicalserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hierarchicalserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonlistsetmapserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+                  "request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonlistsetmapserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonlistsetmapserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonlistsetmapserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonlistsetmapserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonlistsetmapserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonsermap",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonsermap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonsermap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gsonserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/gsonserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gsonserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/createnestedinstancecreators",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/createnestedinstancecreators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createnestedinstancecreators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/createnestedinstancecreators",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/createnestedinstancecreators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createnestedinstancecreators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/createnestedinstancecreators",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/createnestedinstancecreators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createnestedinstancecreators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+                   "body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/complexobjectorderserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderFinishDate\" : \"2013-03-25T12:06:06\",\r\n    \"paymentType\" : \"CARD\",\r\n    \"discount\" : {\"value\" : 0.25},\r\n    \"deliveryData\" : {\"numOfPackages\" : 67},\r\n    \"orderingUser\" : {\r\n        \"firstname\" : \"sayantan\",\r\n        \"lastname\" : \"chatterjee\"\r\n    },\r\n    \"orderedProducts\" : \r\n        [\r\n            {\"name\" : \"ordername\",\"price\" : 74.00},\r\n            {\"name\" : \"ordername2\",\"price\" : 75.00}\r\n        ],\r\n    \"offeringShop\" : {\r\n        \"name\" : \"shopname\",\r\n        \"sellerName\" : \"sellerName\"},\r\n    \"orderId\" : 67,\r\n    \"orderstatus\" : \"PROCESSING\",\r\n    \"orderDate\" : \"2018-10-26\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/complexobjectorderserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"complexobjectorderserde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/simpleobjectusernestedserde",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"sayantan\",\r\n    \"email\" : \"sayantanc6@gmail.com\",\r\n    \"isDeveloper\" : true,\r\n    \"age\": 34,\r\n    \"userAddress\" : {\r\n        \"street\" : \"sitala tala\",\r\n        \"houseNumber\" : \"18/A\",\r\n        \"city\": \"Kolkata\",\r\n        \"country\" : \"India\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/simpleobjectusernestedserde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"simpleobjectusernestedserde"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
